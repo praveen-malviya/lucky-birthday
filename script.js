@@ -9,10 +9,11 @@ var checkIfLucky = function(){
     var birthDateInt = parseInt(birthDate.replace(/-/g, ""));
     var sumOfDigit= 0;  
 
-    if(birthDate || luckyNumber){
-    for(let i = 0; i < 8; i++){
+    if(birthDate && luckyNumber){
+        if(luckyNumber>0){
 
-        sumOfDigit += birthDateInt%10;
+    for(let i = 0; i < 8; i++){
+      sumOfDigit += birthDateInt%10;
         var birthDateInt = Math.trunc(birthDateInt/10);
     }
     
@@ -22,6 +23,9 @@ var checkIfLucky = function(){
     {
         document.getElementById('showResult').innerHTML = "Your Lucky Number is Not so Lucky";
     }
+}else{
+    document.getElementById('showResult').innerHTML = "Please Input Value greater than ZERO"
+}
 }
 
 else {
