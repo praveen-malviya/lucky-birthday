@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lucky Birthday</h1>
+    </header>
+
+    <main>
+
+        <div id="privacyNotice">
+            <span onclick="removeNotice()">X</span>
+            <h5>PRIVACY NOTICE</h5>
+            <p> Please Note We Are Not Storing Any User data.</p>
+        </div>
+    <h4>Check if your Birthday Is lucky</h4>
+
+    <label for="birthday">Date of Birth</label>
+    <input type="date" id="inputBirthday" name="birthday">
+
+    <label for="luckyNumber">Your Lucky Number</label>
+    <input type="number" id="inputLuckyNum" name="luckyNumber">
+
+    <button onclick="checkIfLucky()">Ask Baba</button>
+
+    <h3 id="showResult"></h3>
+
+</main>
+<footer>
+    <h5>© | 2021 | Praveen Malviya</h5>
+    <ul>
+        <li><a href="https://github.com/praveen-malviya"><img src="/images/github.svg" /></a></li>
+        <li><a href="https://www.linkedin.com/in/mpraveen07"><img src="/images/linkedin.svg" alt=""></a></li>
+        <li><a href="https://www.instagram.com/pra_veen.m"><img src="/images/instagram.svg" alt=""></a></li>
+    </ul>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
